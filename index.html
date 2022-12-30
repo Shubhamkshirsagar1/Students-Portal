@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Portal</title>
+    <link rel="shortcut icon" href="icons8-globe-africa-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NavBar Container -->
+    <nav id="container">
+        <span id="navs">Student's Portal</span>
+    </nav>
+
+    <!-- Search Bar Container -->
+    <div id="searchBar">
+        <input type="text" id="searchInput" placeholder="Search"/>
+        <button id="searchButton" onclick="searchTablea()">Search</button>
+    </div>
+
+
+    <!-- Button Section -->
+    <div id="flexContainer">
+      <button id="sortAZ" class="flexButton" onclick="sortAZa()">Sort A->Z</button>
+      <button id="sortZA" class="flexButton" onclick="sortZAa()">Sort Z->A</button>
+      <button id="sortByMarks" class="flexButton" onclick="sortMarksa()">Sort By Marks</button>
+      <button id="sortByPassing" class="flexButton" onclick="sortPassinga()">Sort By Passing</button>
+      <button id="sortByClass" class="flexButton" onclick="sortClassa()">Sort By Class</button>
+      <button id="sortByGender" class="flexButton" onclick="sortGendera()">Sort By Gender</button>
+    </div>
+
+
+    <!-- Table Section -->
+    <table id="studentTable" border="1px">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Class</th>
+                <th>Marks</th>
+                <th>Passing</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        
+        <!-- Table Body  -->
+        <tbody id="tableBody" border="1px"></tbody>
+    </table>
+
+
+    <!-- Gender Section -->
+    <div id="femaleTableContainer" ></div>
+    <div id="maleTableContainer"></div>
+  </body>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
